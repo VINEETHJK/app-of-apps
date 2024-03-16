@@ -4,11 +4,11 @@ metadata:
   name: app-of-apps
 spec:
   destination:
-    name: in-cluster
+    name: hub-control-plane
     namespace: argocd
   source:
     path: apps
-    repoURL: 'https://github.com/morey-tech/argo-cd-app-of-apps-demo'
+    repoURL: 'https://github.com/VINEETHJK/app-of-apps.git'
     targetRevision: HEAD
   project: default
   # syncPolicy:
